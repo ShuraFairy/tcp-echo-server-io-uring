@@ -6,6 +6,8 @@ else()
     project (tcp-echo-server-io-uring VERSION 0.0.1)
 endif()
 
+configure_file(version.h.in version.h)
+
 find_package(Doxygen)
 
 option(WITH_LIBURING "with liburing" ON)
