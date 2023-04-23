@@ -53,7 +53,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./tcp-echo-server-io-uring-0.0.${{ github.run_number }}-Linux.deb
-          asset_name: tcp-echo-server-io-uring-0.0.${{ github.run_number }}-Linux.deb
+          asset_path: ./server-0.0.${{ github.run_number }}-Linux.deb
+          asset_name: server-0.0.${{ github.run_number }}-Linux.deb
           asset_content_type: application/vnd.debian.binary-package
           
